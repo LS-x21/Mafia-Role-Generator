@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile-style.css">
+    <title>Mafia Generator</title>
+    <link rel="icon" href="photos/icon.png">
+</head>
+<!--hi-->
+<body>
+    <div id="main">
+        <div id="top"></div>
+        <div id="loading">
+            <div id="loading-container">
+            </div>
+        </div>
+        <div id="front">
+            <div id="front-content">
+                <h1 id="front-title">Project Generator of Mafia</h1>
+                <div id="front-button">
+                    <p id="front-button-text" onclick="document.location='ins.html'">Instructions</p>
+                    <p id="front-button-text" onclick="second()">Start</p>
+                </div>
+            </div>
+        </div>
+        <div class="frontbk">
+            <div id="front-container">
+                <div id="icon">
+                    <div class="char-icon" style="--x:0">
+                        <img class="chars-icon" style="--x:0"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396876876480542/villa.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:1">
+                        <img class="chars-icon" style="--x:1"
+                            src="https://media.discordapp.net/attachments/746477081143017522/820396873793011732/prophet.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:2">
+                        <img class="chars-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396883188383784/guard.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:3">
+                        <img class="chars-icon" id="four"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396875218681866/witch.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:4">
+                        <img class="chars-icon" id="five"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396887801593856/hunter.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:5">
+                        <img class="chars-icon" id="six"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820398307717021696/idiot.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:6">
+                        <img class="chars-icon" id="seven"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820397112364892220/wolf.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:7">
+                        <img class="chars-icon" id="eight"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396677617418250/wwk.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:8">
+                        <img class="chars-icon" id="nine"
+                            src="https://media.discordapp.net/attachments/746477081143017522/820396832181452800/pretty.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:9">
+                        <img class="chars-icon" id="ten"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396878330986507/cupid.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:10">
+                        <img class="chars-icon" id="eleven"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396881561387058/bomb.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:11">
+                        <img class="chars-icon" id="twelve"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396879740928041/elder.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:12">
+                        <img class="chars-icon" id="thirteen"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396884740407296/penguin.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:13">
+                        <img class="chars-icon" id="fourteen"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820394786414526467/bear.png"
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:14">
+                        <img class="chars-icon" id="fifteen"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396889652330566/sheep.png "
+                            alt="">
+                    </div>
+                    <div class="char-icon" style="--x:15">
+                        <img class="chars-icon" id="sixteen"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396886531244122/rooster.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="update-content">
+            <div id="update-header">
+                <img id="update-header-icon" src="photos/update.png">
+                <h1 id="update-title">Updates</h1>
+                <img id="update-header-icon" src="photos/update.png">
+            </div>
+            <img id="update-x" src="photos/x.png" onclick="updateClose()">
+            <p id="update-text">
+                Verision 4.0.1: <br>
+                -- Instructions page<br>
+                -- Basic Role Generating Format<br>
+                -- New Features<br>
+                -- Optimizations + More Bug Fixes
+            </p>
+        </div>
+        <div id="update">
+            <img id="update-icon" src="photos/update.png" onclick="update();">
+        </div>
+        <div id="second"></div>
+        <div id="modal"></div>
+        <div id="confirm">
+            <h1 id="confirm-title">You sure you wanna submit?</h1>
+            <div id="confirm-button">
+                <button id="no" onclick="decline()">No</button>
+                <button id="yes" onclick="accept()">Yes</button>
+            </div>
+        </div>
+        <div id="footer"></div>
+        <div id="result">
+            <h1 id="result-title">Results</h1>
+            <div id="result-content"></div>
+            <div id="spacer"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/result.js"></script>
+    <script src="js/preset.js"></script>
+    <script src="js/button.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+#front-title {
+  background-color: #232324e3;
+  padding: 2vmax;
+}
+
+#front-title, #update-title, #confirm-title, #result-title, #ins-title, #player-title{
+  font-size: 1.3em;
+}
+
+#chara, #chara-title, #player-name,#player-title-name{
+  font-size: 1em;
+}
+
+#player-title-name{
+  letter-spacing: .5vmin;
+}
+
+.player-icon{
+  height: 50px;
+  width: 50px;
+}
+
+.name{
+  width: 125px;
+}
+
+#chara-title{
+  font-size:.8em
+}
+
+#front-button-text, .presets, .buttons, #no, #yes, #submit, .player-input, #player-text{
+  font-size: .8em;
+}
+
+.pm{
+  font-size: 1em;
+}
+
+div.char-icon {
+  padding: 20vmax;
+}
+
+#chara{
+  width: 150px;
+  padding: .75vmin;
+  margin: 1vmin;
+}
+
+#chara-pic{
+  width: 75px;
+  height: 75px;
+  margin-bottom: 1vmax;
+}
+
+#result-content{
+  margin-top: 5vh;
+}
+
+#back {
+  padding: 1.5vmax;
+  background-color: #4D4D4F;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  transition: 1s;
+  width: 100vw;
+  height: 5vh;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+#nav-content {
+  margin: 5vmax;
+}
+
+#nav-img {
+  margin: 5vmax;
+  width: 75vmax;
+  height: auto;
+  transition: 500ms;
+}
+
+.rolenum{
+  width: 50px;
+}
+
+#footer-line {
+  display: none;
+}
+
+#nav-img:hover {
+  transform-origin: center center;
+  transform: scale(1.5);
+}
+
+#update-icon {
+  height: 7.5vmax;
+  width: 7.5vmax;
+}
+
+#update-x {
+  height: 3vmax;
+  width: 3vmax;
+}
+
+#result-player {
+  margin: 1vmax;
+  padding: 1vmax;
+  width: 150px
+}
+
+#result-img{
+  max-width: 75px;
+  max-height: 75px;
+}
+
+#result-img-container{
+  height: 75px;
+  width: auto;
+}
