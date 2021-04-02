@@ -149,6 +149,7 @@ body {
   padding: 2vmin;
   margin: 2vmin;
   transition: 500ms;
+  font-size: 1.4em;
 }
 
 #player-title-name {
@@ -279,6 +280,7 @@ img.chars-icon {
 #subject-container:hover #player-title {
   background-color:#B6B5BAb3;
   color:rgb(0, 118, 236);
+  font-size: 1.6em;
 }
 
 #roles {
