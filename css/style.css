@@ -755,6 +755,22 @@ td {
   transition: 1s;
   flex-direction: row;
   border: none;
+  transition: 500ms;
+}
+
+.presets:hover #presets-text{
+  background-color: #B6B5BA;
+  color: rgb(0, 118, 236);
+  font-weight: bold;
+}
+
+.presets:hover .preset-content{
+  background-color: #898989;
+}
+
+.presets:hover .preset-content #preset-content-text{
+  color: rgb(0, 118, 236);
+  font-weight: bold;
 }
 
 #presets-text {
@@ -765,6 +781,8 @@ td {
   padding: 1vmin;
   width: 125px;
   text-align: center;
+  transition: 500ms;
+
 }
 
 .preset-content {
@@ -780,6 +798,8 @@ td {
   text-align: left;
   font-size: .8em;
   z-index: 3;
+  transition: 500ms;
+
 }
 
 #preset-content-text {
