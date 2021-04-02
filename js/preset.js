@@ -1,3 +1,24 @@
+let presetObject = {
+    name: "preset6",
+    x: 6,
+    villa: 0,
+    prophet: 0,
+    guard: 0,
+    witch: 0,
+    hunter: 0,
+    idiot: 0,
+    wolf: 0,
+    wwk: 0,
+    pretty: 0,
+    cupid: 0,
+    bomb: 0,
+    elder: 0,
+    penguin: 0,
+    bear: 0,
+    sheep: 0,
+    rooster: 0
+};
+
 function preset6() {
     x = 6;
     setplayers();
@@ -66,8 +87,8 @@ function preset6() {
     for (var i = 0; i < x; i++) {
         names.innerHTML += `<!--spacer--><div class="name">
         <img  class="player-icon" src="photos/player_icon2.png">
-        <h1 id="player-title-name">Player ${i+1}</h1>
-        <div id="player-text">Name: <input type="text" class="player-input" id="player${i+1}" value="unnamed" required></div>
+        <h1 id="player-title-name">Player ${i + 1}</h1>
+        <div id="player-text">Name: <input type="text" class="player-input" id="player${i + 1}" value="unnamed" required></div>
     </div>`
     }
 

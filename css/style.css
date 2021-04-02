@@ -139,9 +139,16 @@ body {
 }
 
 #player-title {
+  position: sticky;
+  top: 0;
   font-family: 'Risque', cursive;
   letter-spacing: 1vmax;
   color: white;
+  z-index: 2;
+  background-color: #000000b3;
+  padding: 2vmin;
+  margin: 2vmin;
+  transition: 500ms;
 }
 
 #player-title-name {
@@ -260,11 +267,18 @@ img.chars-icon {
 }
 
 #subject-container {
+  position: sticky;
+  top: -20vh;
   height: auto;
   width: auto;
   background: #4D4D4F;
   padding: 5vmin;
-  margin: 2vmin;
+  border: 2vmin solid black;
+}
+
+#subject-container:hover #player-title {
+  background-color:#B6B5BAb3;
+  color:rgb(0, 118, 236);
 }
 
 #roles {
@@ -742,8 +756,6 @@ td {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-left: auto;
 }
 
 .presets {
