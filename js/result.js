@@ -15,9 +15,9 @@ function calcuate(nameList, charaList) {
     for (let i = 0; i < roleList.length; i++) {
         resultHTML += `
         <!--spacer--><div id="result-player">
-                <h2 id="chara-title">Role: ${roleNames[chara.indexOf(roleList[i])]}</h2>
+                <h2 id="chara-title">#${i+1} <br> ${roleNames[chara.indexOf(roleList[i])]}</h2>
                 <div id="result-img-container"><img id="result-img" src="${IMG[chara.indexOf(roleList[i])]}"/></div>
-                <h2 id="player-name">Player ${i+1}: ${nameList[i]}</h2>
+                <h2 id="player-name">${nameList[i]}</h2>
             </div>
         `;
     }
