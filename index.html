@@ -9,6 +9,7 @@
     <title>Mafia Generator</title>
     <link rel="icon" href="photos/icon.png">
 </head>
+
 <body>
     <div id="main">
         <div id="top"></div>
@@ -18,136 +19,288 @@
         </div>
         <div id="front">
             <div id="front-content">
-                <h1 id="front-title">Project Generator of Mafia</h1>
+                <h1 id="front-title"><span id="title">Project Generator of Mafia</span><span id="title">Project
+                        Generator of
+                        Mafia</span><span id="title">Project Generator of Mafia</span>Project Generator of Mafia</h1>
                 <div id="front-button">
-                    <p id="front-button-text" onclick="document.location='ins.html'">Instructions</p>
+                    <p id="front-button-text" onclick="ins()">Instructions</p>
                     <p id="front-button-text" onclick="second()">Start</p>
                 </div>
             </div>
         </div>
         <div class="frontbk">
             <div id="front-container">
-                <div id="icon">
-                    <div class="char-icon" style="--x:0">
-                        <img class="chars-icon" style="--x:0"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396876876480542/villa.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:1">
-                        <img class="chars-icon" style="--x:1"
-                            src="https://media.discordapp.net/attachments/746477081143017522/820396873793011732/prophet.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:2">
-                        <img class="chars-icon"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396883188383784/guard.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:3">
-                        <img class="chars-icon" id="four"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396875218681866/witch.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:4">
-                        <img class="chars-icon" id="five"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396887801593856/hunter.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:5">
-                        <img class="chars-icon" id="six"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820398307717021696/idiot.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:6">
-                        <img class="chars-icon" id="seven"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820397112364892220/wolf.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:7">
-                        <img class="chars-icon" id="eight"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396677617418250/wwk.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:8">
-                        <img class="chars-icon" id="nine"
-                            src="https://media.discordapp.net/attachments/746477081143017522/820396832181452800/pretty.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:9">
-                        <img class="chars-icon" id="ten"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396878330986507/cupid.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:10">
-                        <img class="chars-icon" id="eleven"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396881561387058/bomb.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:11">
-                        <img class="chars-icon" id="twelve"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396879740928041/elder.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:12">
-                        <img class="chars-icon" id="thirteen"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396884740407296/penguin.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:13">
-                        <img class="chars-icon" id="fourteen"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820394786414526467/bear.png"
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:14">
-                        <img class="chars-icon" id="fifteen"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396889652330566/sheep.png "
-                            alt="">
-                    </div>
-                    <div class="char-icon" style="--x:15">
-                        <img class="chars-icon" id="sixteen"
-                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396886531244122/rooster.png"
-                            alt="">
-                    </div>
-                </div>
+                <div id="icon"></div>
             </div>
-        </div>
-        <div id="update-content">
-            <div id="update-header">
-                <img id="update-header-icon" src="photos/update.png">
-                <h1 id="update-title">Updates</h1>
-                <img id="update-header-icon" src="photos/update.png">
-            </div>
-            <img id="update-x" src="photos/x.png" onclick="updateClose()">
-            <p id="update-text">
-                Verision 4.0.2: <br>
-                -- Slight UI Change<br>
-                -- More Optimizations + More Bug Fixes
-            </p>
-        </div>
-        <div id="update">
-            <img id="update-icon" src="photos/update.png" onclick="update();">
-        </div>
-        <div id="second"></div>
-        <div id="modal"></div>
-        <div id="confirm">
-            <h1 id="confirm-title">You sure you wanna submit?</h1>
-            <div id="confirm-button">
-                <button id="no" onclick="decline()">No</button>
-                <button id="yes" onclick="accept()">Yes</button>
-            </div>
-        </div>
-        <div id="footer"></div>
-        <div id="result">
-            <h1 id="result-title">Results</h1>
-            <div id="result-content"></div>
-            <div id="spacer"></div>
         </div>
     </div>
+    <div id="update-content">
+        <div id="update-header">
+            <h1 id="update-title">Updates</h1>
+        </div>
+        <img id="update-x" src="photos/x.png" onclick="updateClose()">
+        <p id="update-content-text">
+            Verision 4.0.2: <br>
+            -- Slight UI Changes
+        </p>
+    </div>
+    <div id="update">
+        <img id="update-icon" src="photos/update.png" onclick="update();">
+        <div id="update-text">
+            <p>See Current Verision</p>
+        </div>
+    </div>
+    <div id="second"></div>
+    <div id="third">
+        <div id="ins-content">
+            <h1 id="ins-title">Instructions</h1>
+            <h2 id="ins-content-subtitle">Web Navigation</h2>
+            <div id="nav-content">
+                At the home page, click start to begin choosing your roles. Then look at diagrams to see what does what.
+                If
+                on mobile tap on image to expand, tap elsewhere to return to normal size.
+                <img id="nav-img"
+                    src="https://cdn.discordapp.com/attachments/491075385019072512/818336184161533952/unknown.png">
+            </div>
+            <div id="spacer"></div>
+            <h2 id="ins-content-subtitle">Roles</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396876876480542/villa.png">
+                        Villager
+                    </td>
+                    <td>
+                        The innocent people who have no special powers.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://media.discordapp.net/attachments/746477081143017522/820396873793011732/prophet.png">
+                        Prophet
+                    </td>
+                    <td>
+                        Can check one person’s identity each night. The judge will reveal that person’s identity as
+                        “good”
+                        or “bad” only to the Prophet.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396883188383784/guard.png">
+                        Guard
+                    </td>
+                    <td>
+                        Can protect one person from the Werewolves each night. The protector can also protect themselves
+                        if
+                        needed. They cannot protect the same person two nights in a row. Protected people are not safe
+                        from
+                        being voted out.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396875218681866/witch.png">
+                        Witch
+                    </td>
+                    <td>
+                        Can heal and poison one target only once throughout the whole game. Each night, the Witch will
+                        know
+                        who died (before their healing power is used) and can choose to save them or not. They may only
+                        save
+                        themselves the first night if killed.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396887801593856/hunter.png">
+                        Hunter
+                    </td>
+                    <td>
+                        Upon death, they can shoot down a person with them if wanted. If they are poisoned by the Witch,
+                        they may not use their power.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820398307717021696/idiot.png">
+                        Idiot
+                    </td>
+                    <td>
+                        Can’t die when voted out, but will lose their power to vote. They will still be involved during
+                        daytime conversations. If killed for other reasons, they will die.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820397112364892220/wolf.png">
+                        Wolf
+                    </td>
+                    <td>
+                        Can communicate with their teammates to kill one person each night. Their objective is to kill
+                        all
+                        the innocents and try to hide their identities. They can kill one of their own members during
+                        the
+                        night, but this won’t be counted as a “suicide”.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396677617418250/wwk.png">
+                        White Wolf King
+                    </td>
+                    <td>
+                        Communicates with their teammates to kill one person each night with the other Werewolves. Their
+                        special ability is when they suicide during the day, they may choose to drag one person down
+                        with
+                        them.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://media.discordapp.net/attachments/746477081143017522/820396832181452800/pretty.png">
+                        Pretty Wolf
+                    </td>
+                    <td>
+                        Can also kill one person each night with the other Werewolves. They can choose a person as a
+                        hostage
+                        during the night for each night and until the following day. If the Pretty Wolf dies, the person
+                        who
+                        they held hostage will also die. They may not choose the same hostage person for two nights in a
+                        row, and the Pretty Wolf can’t suicide
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396878330986507/cupid.png">
+                        Cupid
+                    </td>
+                    <td>
+                        Can link any two people together during the first night of the game (which is also their only
+                        chance
+                        of doing so). If one of the linked people is killed, the other one dies as well.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396881561387058/bomb.png">
+                        Bomb Master
+                    </td>
+                    <td>
+                        If they are voted out during the day, EVERYONE who voted them dies with them as well.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396879740928041/elder.png">
+                        Elder
+                    </td>
+                    <td>
+                        When killed by the Werewolves for the first time, they will not die, but the second time they
+                        were
+                        killed they do die. If killed for other reasons, they will immediately die.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396884740407296/penguin.png">
+                        Penguin
+                    </td>
+                    <td>
+                        Can freeze one person each night, and that person loses the ability to use any of their power
+                        for
+                        that night and the following day (the Penguin may choose to freeze themselves if needed).
+                        Werewolves
+                        can still suicide during the day or kill targets in the night if frozen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820394786414526467/bear.png">
+                        Bear
+                    </td>
+                    <td>
+                        Each night the Bear will private message the judge any four players’ names. After each night,
+                        the
+                        judge will announce whether the Bear roared. If the Bear roared, then at least 2 out of the 4
+                        people
+                        the Bear checked are Werewolves. Other people will not know who the Bear is and who got checked.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396889652330566/sheep.png ">
+                        Sheep
+                    </td>
+                    <td>
+                        The Sheep is a spy for the Werewolves. They will not be in the Werewolf group chat and the
+                        Werewolves will not know them. Whenever the prophet or the Bear checks their identity, it will
+                        appear as “good”. The Sheep have one chance to join the Werewolf group chat and meet their
+                        Werewolf
+                        teammates. Anytime during the night, they can tell the judge a person (either alive or dead)
+                        what
+                        they think is a Werewolf. If they got it correct, they will be invited to the chat, and their
+                        identity will be turned out as “bad” if checked. If they guessed wrong, then they would be
+                        announced
+                        dead the next morning. The Sheep’s winning condition is the same as the Werewolves. Sheep cannot
+                        Suicide.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="ins-icon"
+                            src="https://cdn.discordapp.com/attachments/746477081143017522/820396886531244122/rooster.png">
+                        Rooster
+                    </td>
+                    <td>
+                        If killed during the night by the Werewolves, there will be no daytime the following day. The
+                        game
+                        will immediately go into the next night. If killed for any other reason or frozen by the
+                        Penguin,
+                        there will be daytime after the night but the Rooster still dies.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="ins-back" onclick="document.location='index.html'">Return Home</div>
+    </div>
+    <div id="modal"></div>
+    <div id="confirm">
+        <h1 id="confirm-title">You sure you wanna move on?</h1>
+        <div id="confirm-button">
+            <button id="no" onclick="decline()">No</button>
+            <button id="yes" onclick="accept()">Yes</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <div id="result">
+        <h1 id="result-title">Results</h1>
+        <div id="result-content"></div>
+        <div id="spacer"></div>
+    </div>
+
+
+
     <script src="js/script.js"></script>
     <script src="js/result.js"></script>
     <script src="js/preset.js"></script>
     <script src="js/button.js"></script>
-
+    <script src="js/setup.js"></script>
 </body>
 
 </html>

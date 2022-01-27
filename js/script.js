@@ -11,6 +11,8 @@ const confirms = document.getElementById("confirm");
 const result = document.getElementById("result");
 const updateDiv = document.getElementById("update-content");
 const updateIMG = document.getElementById("update");
+const tp = document.getElementById("third");
+const main = document.getElementById("main");
 
 let IMG =
     [
@@ -164,6 +166,17 @@ let nameValues = [];
 let nameList = [];
 let charaList = [];
 let tempHTML;
+
+icon.innerHTML = '';
+for (let i = 0; i < 16; ++i) {
+    icon.innerHTML += `
+    <div class="char-icon" style="--x:${i}">
+        <img class="chars-icon" style="--x:${i}"
+        src="${IMG[i]}"
+        alt="">
+    </div>`
+}
+
 loadCont.innerHTML = `
     <div id="loading-text" style="--i:1">L</div>
     <div id="loading-text" style="--i:2">O</div>
@@ -207,14 +220,14 @@ function secondContentFunc() {
 
 function second() {
     footer.innerHTML = `
-    <button class="back" id="submit" onclick="document.location='index.html'">back</button>
+    <div class="back" id="submit" onclick="document.location='index.html'"><p id="submit-arrow"> ← <p></div>
             <div id="lines">
                 <hr id="footer-line">
                 <hr id="footer-line">
                 <hr id="footer-line">
             </div>
-            <button class="submit" id="submit" onclick="submit()">submit</button>
-            <button class="reset" id="submit" onclick="reset()">reset</button>
+            <div class="reset" id="submit" onclick="reset()"><p id="submit-text"> reset </p></div>
+            <div class="submit" id="submit" onclick="submit()"><span id="submit-arrow"> → </span></div>
     `;
     result.style.display = 'none';
     updateIMG.style.display = 'none';
@@ -246,6 +259,17 @@ function second() {
         sp.style.display = 'flex';
         footer.style.display = 'flex';
         sp.style.opacity = 100;
+        document.body.style.overflowY = 'scroll';
+    }, 1000);
+}
+
+function ins() {
+    main.style.opacity = 0;
+    setTimeout(() => {
+        third.style.display = 'flex';
+        fp.style.display = 'none';
+        icon.style.display = 'none';
+        updateIMG.style.display = 'none';
         document.body.style.overflowY = 'scroll';
     }, 1000);
 }
